@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\demineur\BIB\bin\Debug\BIB.dll
+C:\Users\user\source\repos\demineur\BIB\bin\Debug\BIB.pdb
+C:\Users\user\source\repos\demineur\BIB\obj\Debug\BIB.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\demineur\BIB\obj\Debug\BIB.dll
+C:\Users\user\source\repos\demineur\BIB\obj\Debug\BIB.pdb
+C:\Users\user\source\repos\demineur\BIB\obj\Debug\BIB.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\demineur\BIB\bin\Debug\BIB.dll
+C:\Users\MSI\source\repos\demineur\BIB\bin\Debug\BIB.pdb
+C:\Users\MSI\source\repos\demineur\BIB\obj\Debug\BIB.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\demineur\BIB\obj\Debug\BIB.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\demineur\BIB\obj\Debug\BIB.dll
+C:\Users\MSI\source\repos\demineur\BIB\obj\Debug\BIB.pdb

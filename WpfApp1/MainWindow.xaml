@@ -1,0 +1,62 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="669.355" Width="1103.226"
+        WindowStartupLocation="CenterScreen"  ResizeMode="CanMinimize">
+    <StackPanel>
+        <Menu Height="25" Width="auto">
+            <MenuItem Header="Options" Click="MenuItem_Click">
+                <MenuItem Header="New game" Click="NewGame_Click"/>
+                <Separator/>
+                <MenuItem Header="Level">
+                    <RadioButton Content="Beginner" Cursor="Hand" IsChecked="True" Checked="Beginner_Checked"/>
+                    <RadioButton Content="Intermediate" Cursor="Hand" Checked="Intermediate_Checked"/>
+                    <RadioButton Content="Advanced" Cursor="Hand" Checked="Advanced_Checked"/>
+                </MenuItem>
+                <Separator/>
+                <CheckBox Name="playMusic" Unchecked="stop_music" Checked="play_music" >Music</CheckBox>
+                <Separator/>
+                <MenuItem Header="Exit" Click="Exit_Click"/>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="Help" Click="MenuItem_Click_1"/>
+            <Separator/>
+            <Label Content="Timer" Name="text1" Visibility="Hidden"/>
+            <Label Content="00:00" Name="timer" Visibility="Hidden"/>
+            <Separator/>
+            <Label Content="" Width="35"  Visibility="Hidden" Name="image">
+                <Label.Background>
+                    <ImageBrush ImageSource="viper.jpg"/>
+                </Label.Background>
+            </Label>
+            <Label Content="00" Name="Flag" Visibility="Hidden"/>
+            <Label Content="" Width="21" Visibility="Hidden">
+                <Label.Background>
+                    <ImageBrush ImageSource="bomb.png"/>
+                </Label.Background>
+            </Label>
+            <Label Content="--" Visibility="Hidden"/>
+            <Label Content="--" Visibility="Hidden"/>
+        </Menu>
+        <Canvas Height="611" Margin="0,0,-0.2,0" Name="MyCanvas">
+            <Canvas.Background>
+                <ImageBrush ImageSource="983615.jpg"/>
+            </Canvas.Background>
+            <Rectangle Visibility="Hidden" Fill="#FFF4F4F5" Height="611" Canvas.Left="802" Stroke="Black" Width="296" Name="rectangle" Opacity="100"/>
+            <Label Visibility="Hidden" Content="Timer" Canvas.Left="883" Canvas.Top="32" Height="77" Width="151" FontSize="50" FontWeight="Bold" Name="text"/>
+            <Label Visibility="Hidden" Content="00:00" Canvas.Left="904" Canvas.Top="114" Height="55" Width="97" FontSize="32" Background="White" Foreground="#FF449C1C" FontWeight="Bold" Name="timer2"/>
+            <Label Visibility="Hidden" Content="" Canvas.Left="883" Canvas.Top="314" Height="44" Width="59" Name="flags2">
+                <Label.Background>
+                    <ImageBrush ImageSource="viper.jpg"/>
+                </Label.Background>
+            </Label>
+            <Label Content="00" Canvas.Left="984" Canvas.Top="314" FontWeight="Bold" FontSize="25" Height="44" Name="timer3"  Visibility="Hidden"/>
+            <Label Content="Flags" Canvas.Left="893" Canvas.Top="219" FontWeight="Bold" FontSize="50" Name="text3"  Visibility="Hidden"/>
+        </Canvas>
+    </StackPanel>
+
+</Window>
